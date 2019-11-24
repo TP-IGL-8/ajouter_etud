@@ -14,7 +14,7 @@
          
          </script> 
 
-         <form  action="{{url('/store')}}"  methode="get">
+         <form  action="{{url('api/store')}}"  methode="get">
             {{ csrf_field()}}
             <div  id="form">
                <fieldset  title=""> <legend><strong>Ajouter un etudiant</strong></legend>
@@ -49,7 +49,7 @@
                <br>
                
                Annee: <span  style="color: rgb(196, 0, 0);"></span><br>
-               <input  name="annee"  type="radio">1cp&nbsp;&nbsp;<input  name="annee" type="radio">2cp&nbsp;&nbsp;<input  name="annee"  type="radio">1cs&nbsp;&nbsp;<input  name="annee"  type="radio">2cs&nbsp;&nbsp;<input  name="annee"  type="radio">3cs<br>
+               <input  name="annee" value="1cp"  type="radio">1cp&nbsp;&nbsp;<input  name="annee" value="2cp" type="radio">2cp&nbsp;&nbsp;<input  name="annee" value="1cs" type="radio">1cs&nbsp;&nbsp;<input  name="annee"  value="2cs" type="radio">2cs&nbsp;&nbsp;<input  name="annee" value="3cs" type="radio">3cs<br>
                <br>
 
                <br>

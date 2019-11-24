@@ -49,6 +49,20 @@ class EtudiantController extends Controller
         $newEtu->save();
         return view('store') ;
     }
+    public function store2(Request $request)
+    {
+        $etu =Etudiant ::create($request->all()
+            /*$request([
+        'nom'=>'nom',
+        'prenom'=>'prenom',
+        'email'=>'email',
+        'mat'=>'mat',
+        'grp'=>'grp',
+        'annee'=>'annee',
+        'password'=>'password'])*/
+);
+        return response()->json($etu, 201);
+    }
     public function edit(){
 
     }

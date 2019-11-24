@@ -38,9 +38,10 @@ Route::get('/etudiant','EtudiantController@newEtudiant');
 Route::get('/etudiants','EtudiantController@listEtudiant');
 Route::get('/create','EtudiantController@create');
 
-Route::get('/store','EtudiantController@store');
+Route::get('/store2','EtudiantController@store');
 Route::get('/index','EtudiantController@index');
 
+//Route::get('/store','EtudiantController@store');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('acceuil',function(){
